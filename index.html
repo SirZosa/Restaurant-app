@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="pic/burger_header_image.jpg" alt="header, burguer logo">
+    <div class="container" id="fodio">
+    </div>
+
+    <div class="order container" id="visible">
+        <h3>Your order</h3>
+            <div id="your-order" class="ordered-items">
+            </div>
+            <hr>
+        <div class="ordered-items container">
+            <h4>Total Price:</h4>
+            <h4 id="total-price" class="order-price">$</h3>
+        </div>
+        <button id="complete-order" class="complete-order">Complete order</button>
+    </div>
+    <div id="card">
+        <h2>Enter card details</h2>
+        <form>
+            <input id="input-name" type="text" name="name" placeholder="Enter your name" required> <br>
+            <input id="input-number" type="number" name="debit" placeholder="Enter card number" required><br>
+            <input id="input-password" type="password" name="cvv" placeholder="CVV" required><br>
+            <button id="pay" type="button" class="complete-order">Pay</button>
+            <button type="button" id="cancel" class="complete-order cancel">Cancel</button>
+        </form>
+    </div>
+    <script src="/js/index.js" type="module"></script>
+    
+</body>
+</html>
+
