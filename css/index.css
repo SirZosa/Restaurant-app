@@ -25,6 +25,7 @@ img{
 
 p {
     color: dimgray;
+    user-select: none;
 }
 
 .item h3, h4{
