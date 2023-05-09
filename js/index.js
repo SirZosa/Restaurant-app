@@ -40,7 +40,7 @@ document.addEventListener("click", function(e){
    
     // If the button clicked has an id of "pay", call afterPay function
     if(e.target.id === 'pay'){
-    afterPay()
+    validateForm()
     }
    
     // If the button clicked has an id of "another-order", reload the page to start again
@@ -158,3 +158,16 @@ document.addEventListener("click", function(e){
    function startAgain(){
     window.location.reload()
    }
+
+    function validateForm() {
+       const iname = inputName.value;
+       const inumber = inputNumber.value;
+       const ipassword = inputPassword.value;
+       if (iname === "" || inumber === "" || ipassword === "") {
+         alert("Please fill al the fields");
+         return false;
+    }
+        else {
+         afterPay()
+    }
+  }
