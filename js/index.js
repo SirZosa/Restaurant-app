@@ -6,6 +6,9 @@ const foooD = document.getElementById('fodio')
 const yourOrder = document.getElementById('your-order')
 const totalPriceDisplay = document.getElementById('total-price')
 const visibleWindow = document.getElementById('visible')
+const inputName = document.getElementById('input-name')
+const inputNumber = document.getElementById('input-number')
+const inputPassword = document.getElementById('input-password')
 
 // Initializing variables
 let orderArray = []
@@ -159,15 +162,15 @@ document.addEventListener("click", function(e){
     window.location.reload()
    }
 
-    function validateForm() {
-       const iname = inputName.value;
-       const inumber = inputNumber.value;
-       const ipassword = inputPassword.value;
-       if (iname === "" || inumber === "" || ipassword === "") {
-         alert("Please fill al the fields");
-         return false;
-    }
-        else {
-         afterPay()
+  
+   function validateForm() {
+    const iname = inputName.value;
+    const inumber = inputNumber.value;
+    const ipassword = inputPassword.value;
+    if (iname === "" || inumber === "" || ipassword === "") {
+      alert("Por favor llena todos los campos.");
+      return false;
+    } else {
+      afterPay()
     }
   }
